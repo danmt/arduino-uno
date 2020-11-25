@@ -1,16 +1,29 @@
-const int firstLed = 3;
-const int onDelaySeconds = 100;
-const int offDelaySeconds = 200;
+const int ledWithPWM = 3;
 
 void setup()
 {
-  pinMode(firstLed, OUTPUT);
+}
+
+void fadeIn(int ledId, int seconds)
+{
+  for (int glow = 0; glow <= 255; glow++)
+  {
+    analogWrite(ledId, glow);
+    delay(seconds);
+  }
+}
+
+void fadeOut(int ledId, int seconds)
+{
+  for (int glow = 255; glow >= 0; glow--)
+  {
+    analogWrite(ledId, glow);
+    delay(seconds);
+  }
 }
 
 void loop()
 {
-  digitalWrite(firstLed, HIGH);
-  delay(500);
-  digitalWrite(firstLed, LOW);
-  delay(500);
+  fadeIn(ledWithPWM, 3);
+  fadeOut(ledWithPWM, 3);
 }
