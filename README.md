@@ -8,3 +8,4 @@ This repository intention is to hold every exercise I do while learning how to u
 - [Gradual Glow LED](gradual-glow-led/README.md)
 - [Pulse-Width Modulation](pulse-width-modulation/README.md)
 - [Potentiometer](potentiometer/README.md)
+- [Thermometer](thermometer/README.md)
