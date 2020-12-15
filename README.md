@@ -7,4 +7,4 @@ This repository intention is to hold every exercise I do while learning how to u
 - [Sequential LEDs](sequential-leds/README.md)
 - [Gradual Glow LED](gradual-glow-led/README.md)
 - [Pulse-Width Modulation](pulse-width-modulation/README.md)
-- [Potenciometer](potenciometer/README.md)
+- [Potentiometer](potentiometer/README.md)
