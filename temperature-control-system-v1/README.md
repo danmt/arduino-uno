@@ -1,4 +1,4 @@
-# Temperature Control System
+# Temperature Control System v1
 
 The intention of this exercise is to set up a Temperature Control System using a Dallas 18b20 Temperature sensor and a 12v Fan using an ULN2003 module.
 
