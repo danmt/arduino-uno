@@ -9,3 +9,4 @@ This repository intention is to hold every exercise I do while learning how to u
 - [Pulse-Width Modulation](pulse-width-modulation/README.md)
 - [Potentiometer](potentiometer/README.md)
 - [Thermometer](thermometer/README.md)
+- [Temperature Control System](temperature-control-system/README.md)
