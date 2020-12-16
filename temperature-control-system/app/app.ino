@@ -6,17 +6,17 @@
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensor(&oneWire);
 
+const int FAN_PIN = 5;
+const int MIN_TEMPERATURE = 27;
+const int MAX_TEMPERATURE = 29;
 float temperature;
-int fan = 5;
 bool isFanOn = false;
-int minTemperature = 27;
-int maxTemperature = 29;
 
 void setup()
 {
   Serial.begin(9600);
   Serial.println("Start Temperature Control System");
-  pinMode(fan, OUTPUT);
+  pinMode(FAN_PIN, OUTPUT);
 }
 
 void loop()
@@ -24,16 +24,16 @@ void loop()
   sensor.requestTemperatures();
   temperature = sensor.getTempCByIndex(0);
 
-  if (temperature >= maxTemperature)
+  if (temperature >= MAX_TEMPERATURE)
   {
     Serial.println("Start fan -> " + String(temperature) + " C");
     isFanOn = true;
-    digitalWrite(fan, HIGH);
+    digitalWrite(FAN_PIN, HIGH);
   }
-  else if (temperature <= minTemperature)
+  else if (temperature <= MIN_TEMPERATURE)
   {
     Serial.println("Shut down fan -> " + String(temperature) + " C");
-    isFanOn = true;
-    digitalWrite(fan, LOW);
+    isFanOn = false;
+    digitalWrite(FAN_PIN, LOW);
   }
 }
