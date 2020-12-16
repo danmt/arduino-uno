@@ -1,4 +1,4 @@
-# Potentiometer
+# Thermometer
 
 The intention of this exercise is to set up a Dallas 18b20 Temperature sensor in the simplest way.
 
