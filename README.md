@@ -10,3 +10,4 @@ This repository intention is to hold every exercise I do while learning how to u
 - [Potentiometer](potentiometer/README.md)
 - [Thermometer](thermometer/README.md)
 - [Temperature Control System v1](temperature-control-system-v1/README.md)
+- [Temperature Control System v2](temperature-control-system-v2/README.md)
